@@ -1,7 +1,125 @@
 /* === GLOBAL === */
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Domine', sans-serif;
 	font-weight: 300;
 	font-size:16px;
-		}
+	background-color: #f8f8f8;
+	}
+
+h1  {font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+font-size:3em;}
+
+h3 {font-size: 1.3em;
+line-height: 1.6;}
+
+/* === LOGO === */
+
+#logo {text-align: center}
+
+
+.logo-ashoka {
+  width: 109px;
+  height: 96px;
+  object-fit: contain;
+  margin-top:3em;
+
+}
+
+/* === PANELY === */
+
+.panel-default {
+   border:0;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(224, 224, 224, 0.7);
+}
+
+.panel-default>.panel-heading
+{background: #f8f8f8;
+  font-size: 48px;
+  line-height: 1.13;
+  text-align: center;
+}
+
+.panel-default>.panel-heading h1 {
+	margin:0;
+	padding:0;
+	font-size:48px;}
+
+.panel-body {
+	padding:0;
+	padding-bottom:32px;}
+
+.panel-body img {
+
+	margin-bottom:25px;
+max-width: 100%}
+
+.panel-body h4 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size:1.4em;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.panel-body p {
+	text-align: center;
+	margin:0 40px;
+	line-height: 1.44;
+	font-size: 1em;
+	margin-bottom: 32px;
+}
+
+.panel-body .btn-default {
+	border-radius: 4px;
+  background-color: #343434;
+  color: #fff;
+  font-weight: 400;
+
+}
+
+.panel-body .btn-lg {font-size: 16px}
+
+.rok2015 {color: #5e4e83;}
+.rok2016 {color: #00aeb5;}
+.rok2017 {color: #e73e0d;}
+
+/* === FOOTER === */
+  
+
+ .footer {background-color: #343434;
+ 	color:#fff;
+ 	padding-top:40px;
+	margin-bottom:0;
+	line-height: 2em;}
+
+.footer p a {color:#fff;}	
+
+.footer span {color:#e73e0d;}
+
+
+ .footer h2 {font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	font-size:1.8em;
+	text-align: center;
+	margin-bottom: 40px;}
+
+
+#pridejte {background-color: #e73e0d;
+border:0;
+width:240px;
+margin-top: 40px;
+font-weight: 400;
+}
+
+#pridejte a {color: #fff}
+
+#pridejte .btn-default a {color: #fff}
+
+.logo-small {
+	margin-top:40px;
+	margin-bottom: 40px}
+
+
