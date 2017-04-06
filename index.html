@@ -15,6 +15,38 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Domine|Oswald" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+$('#click1').on("shown.bs.tab", function(){
+  
+    $('html, body').animate({
+        scrollTop: $('#service-one').offset().top - 100
+    }, 'slow');
+  });
+
+$('#click2').on("shown.bs.tab", function(){
+  
+    $('html, body').animate({
+        scrollTop: $('#service-two').offset().top - 100
+    }, 'slow');
+  });
+
+
+$('#click3').on("shown.bs.tab", function(){
+  
+    $('html, body').animate({
+        scrollTop: $('#service-three').offset().top - 100
+    }, 'slow');
+  });
+
+
+});
+
+</script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -73,7 +105,7 @@
                       <img src="img/2015.png">
                       <h4>MAPA SOCIÁLNÍCH INOVÁTORŮ</h4>
                         <p>Známe hybatele sociálních změn v České republice. Na Mapě sociálních inovátorů najdete 1840 lidí,  kterým se daří měnit svět k lepšímu.</p>
-                        <a href="#" class="btn-lg btn-default">Více o mapě</a>
+                        <a href="#service-one" data-toggle="tab" class="btn-lg btn-default" id="click1">Více o mapě</a>
                     </div>
                 </div>
             </div>
@@ -86,7 +118,7 @@
                       <img src="img/2016.png">
                       <h4>ZE:MĚ ZMĚNY I</h4>
                         <p>Víme, co sociálním inovátorům brání v uskutečnění společenských změn. Společně hledáme řešení pro vzvy, které před nimi v Česku stojí.</p>
-                        <a href="#" class="btn-lg btn-default">Více o bariérách</a>
+                        <a href="#service-two" data-toggle="tab" class="btn-lg btn-default" id="click2">Více o bariérách</a>
                     </div>
                 </div>
             </div>
@@ -99,7 +131,7 @@
                       <img src="img/2017.png">
                       <h4>ZE:MĚ ZMĚNY II</h4>
                         <p>Pracujeme na odstraňování bariér pro sociální inovátory. Na společných setkáních propojujeme aktéry a přinášíme návrhy řešení jejich problémů.</p>
-                        <a href="#" class="btn-lg btn-default" style="margin-bottom:32px;">Aktivity v roce 2017</a>
+                        <a href="#service-three" data-toggle="tab" class="btn-lg btn-default" style="margin-bottom:32px;"  id="click3">Aktivity v roce 2017</a>
                     </div>
                 </div>
             </div>
@@ -108,12 +140,118 @@
 
 
 
-
- <hr>
-
  </div>
     <!-- /.containter -->
 
+<div class="container-liquid">
+
+
+  <div class="row obsah">
+    
+    <div id="myTabContent" class="tab-content">
+
+
+                    <div class="tab-pane fade" id="service-one">
+                      <div class="row">
+                          <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 text-obsahu">
+
+                        <h1>KDO JSOU SOCIÁLNÍ INOVÁTOŘI?</h1>
+
+                        <hr>
+
+                        <p class="perex">
+                          V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i jejich podporovatele. Děkujeme, že jste svými zkušenostmi a myšlenkami proměnili toto setkání ve skutečný milník!
+                        </p>
+
+
+                        <hr>
+
+                        <img src="img/mapa.png">
+
+                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. Děkujeme, že jste svými zkušenostmi a myšlenkami proměnili toto setkání ve skutečný milník! K růstu a rozvoji sociálních inovátorů, tj. hybatelů systémových společenských změn je zapotřebí celý soubor podpůrných opatření – <a href="ascas">rozmanité zdroje financování</a>, mentoring, odborné poradenství, úzká spolupráce mezi světem podnikání, nevládním i veřejným sektorem. Celkově tak tvoří “ekosystém” sociálních inovací.
+                        </p>
+                        
+                        <h2>Kolik sociálních inovátorů je v Česku?</h2>
+
+                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        </p>
+
+
+                        <h3>Mít nápad je jen začátek, změna přichází až později</h3>
+
+                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        </p>
+
+                        <h4>Sociální podnikání je podnikání jako každé jiné</h4>
+                        
+                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        </p>
+
+
+                        <h5>Zázraky přes noc se nedějí</h5>
+
+                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        </p>
+
+
+
+                        <ol>
+                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                      
+</li>
+                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        
+</li>
+                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        
+</li>
+                        </ol>
+
+
+                        <ul>
+                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        </li>
+                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        </li>
+                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
+                        </li>
+                        </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade in" id="service-two">
+                      <div class="row">
+                          <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 text-obsahu">
+
+                        <h4>Service Two</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade" id="service-three">
+                      <div class="row">
+                          <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 text-obsahu">
+
+                        <h4>Service Three</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="tab-pane fade" id="service-four">
+                        <h4>Service Four</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                    </div>
+                </div>
+
+        </div>
+      </div>
+
+</div>
+<!-- /.containter-liquid -->
 
         <!-- Call to Action Section -->
         <div class="container-liquid footer">

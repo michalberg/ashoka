@@ -14,6 +14,12 @@ font-size:3em;}
 h3 {font-size: 1.3em;
 line-height: 1.6;}
 
+a {color:#e73e0d;}
+
+ul li, ol li {margin-bottom:15px;}
+
+
+
 /* === LOGO === */
 
 #logo {text-align: center}
@@ -86,6 +92,7 @@ max-width: 100%}
 .rok2016 {color: #00aeb5;}
 .rok2017 {color: #e73e0d;}
 
+
 /* === FOOTER === */
   
 
@@ -123,3 +130,31 @@ font-weight: 400;
 	margin-bottom: 40px}
 
 
+/* === OBSAH === */
+
+.obsah {background-color: #fff;width:100%;}
+
+#service-one {border-top: 4px solid #5e4e83}
+#service-two {border-top: 4px solid #00aeb5;}
+#service-three {border-top: 4px solid #e73e0d;}
+
+.text-obsahu {
+	padding-top:40px;
+	padding-bottom:40px;
+	line-height:1.6em;}
+
+.text-obsahu hr {width:20em;}
+
+.text-obsahu .perex {font-size:1.3em;
+line-height: 1.8em;}
+
+.text-obsahu img {
+	max-width: 100%;
+margin-bottom:40px}
+
+
+.text-obsahu h1, .text-obsahu h2, .text-obsahu h3, .text-obsahu h4, .text-obsahu h5   {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;}
+
+.text-obsahu h3, .text-obsahu h4, .text-obsahu h5  {font-size:1.3em;}
