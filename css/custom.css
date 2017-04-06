@@ -160,11 +160,11 @@ margin-bottom:40px}
 .text-obsahu h3, .text-obsahu h4, .text-obsahu h5  {font-size:1.3em;}
 
 /* === pridejte se === */
-.modal-header, h4, .close {
+.modal-header, .modal-header h4, .close {
       background-color: #e73e0d;
       color:white !important;
       text-align: center;
-      font-size: 30px;
+ font-size: 1.4em;
   }
   .modal-footer {
       background-color: #f9f9f9;
