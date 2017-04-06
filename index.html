@@ -15,9 +15,14 @@
 
 
     <link href="https://fonts.googleapis.com/css?family=Domine|Oswald" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+ 
 <script>
+
+
+
+
 $(document).ready(function() {
 
 $('#click1').on("shown.bs.tab", function(){
@@ -43,7 +48,16 @@ $('#click3').on("shown.bs.tab", function(){
   });
 
 
+ $("#pridejte").click(function(){
+        $("#myModal").modal();
+    });
+
+
 });
+
+
+  
+
 
 </script>
 
@@ -278,7 +292,49 @@ $('#click3').on("shown.bs.tab", function(){
                      <a href="http://nadacekj.cz">ČOISV</a>
                     </p>
 
-                    <a class="btn btn-lg btn-default" id="pridejte" style="color:#fff" href="#">Přidejte se také</a>
+<button class="btn btn-lg btn-default" id="pridejte">Zadejte svůj email pro informace</button>
+
+
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><i class="glyphicon glyphicon-envelope"></i> Zanechte nám svůj email</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          Budeme vás informovat o dalších aktivitách Ashoky v projektu Ze:mě změny.
+
+          <form role="form" action="https://formspree.io/opavak@gmail.com"
+      method="POST">
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="jmeno" name="na,e" placeholder="vaše jméno">
+            </div>
+            
+            <div class="form-group">
+              
+              <input type="text" class="form-control" id="email" name="_replyto" placeholder="váš email">
+            <input type="hidden" name="_subject" value="Nový zájemce o informace z Ashoky" />
+            </div>
+
+            
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Uložit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          Odesláním udělujete společnosti Ashoka Česká republika se sídlem Tuchlauben 7a, 1010 Wien, Rakousko souhlas se zpracováním osobních údajů pro účely informování o činnosti a akcích společnosti.
+        </div>
+      </div>
+      
+    </div>
+  </div>   
+
+
 <br>
                     <a href="http://ashoka-cee.org/czech/" title="Přejít na web Ashoky"><img src="img/logo-small.png"
      srcset="img/logo-small@2x.png 2x, 
@@ -288,8 +344,7 @@ $('#click3').on("shown.bs.tab", function(){
                 </div>
             </div>
         </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
   </body>

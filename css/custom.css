@@ -116,12 +116,12 @@ max-width: 100%}
 
 #pridejte {background-color: #e73e0d;
 border:0;
-width:240px;
+width:340px;
 margin-top: 40px;
 font-weight: 400;
 }
 
-#pridejte a {color: #fff}
+#pridejte {color: #fff}
 
 #pridejte .btn-default a {color: #fff}
 
@@ -158,3 +158,19 @@ margin-bottom:40px}
 	font-weight: 800;}
 
 .text-obsahu h3, .text-obsahu h4, .text-obsahu h5  {font-size:1.3em;}
+
+/* === pridejte se === */
+.modal-header, h4, .close {
+      background-color: #e73e0d;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+      text-align: center;
+      font-size: 0.7em;
+      line-height: 1.6em;
+  }
+
+  .modal-content {color:#000;}
