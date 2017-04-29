@@ -1,2 +1,0 @@
-# ashoka
-ashoka microsite

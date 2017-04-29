@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Ashoka Země:změny</title>
+    
+<meta property="og:title" content="Ashoka Ze:mě změny"/>
+<meta property="og:image" content="http://www.zemezmeny.cz/img/mapa-logo.jpg"/>
+<meta property="og:site_name" content="Ashoka - Ze:mě změny"/>
+<meta property="og:description" content="Iniciativa ke zlepšení podpůrného prostředí pro hybatele společenských změn v České republice"/>
+  
+
+    <title>Ashoka Ze:mě změny</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -14,14 +21,11 @@
     <link href="css/custom.css" rel="stylesheet">
 
 
-    <link href="https://fonts.googleapis.com/css?family=Domine|Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Domine|Oswald" rel="stylesheet">
 
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
  
 <script>
-
-
-
 
 $(document).ready(function() {
 
@@ -30,6 +34,10 @@ $('#click1').on("shown.bs.tab", function(){
     $('html, body').animate({
         scrollTop: $('#service-one').offset().top - 100
     }, 'slow');
+  
+  $('#panel3').removeClass('activepanel3');
+  $('#panel2').removeClass('activepanel2');
+  $('#panel1').addClass('activepanel1');
   });
 
 $('#click2').on("shown.bs.tab", function(){
@@ -37,10 +45,27 @@ $('#click2').on("shown.bs.tab", function(){
     $('html, body').animate({
         scrollTop: $('#service-two').offset().top - 100
     }, 'slow');
+
+  $('#panel1').removeClass('activepanel1');
+  $('#panel3').removeClass('activepanel3');
+  $('#panel2').addClass('activepanel2');
+
   });
 
 
 $('#click3').on("shown.bs.tab", function(){
+  
+    $('html, body').animate({
+        scrollTop: $('#service-three').offset().top - 100
+    }, 'slow');
+
+  $('#panel3').addClass('activepanel3');
+  $('#panel2').removeClass('activepanel2');
+  $('#panel1').removeClass('activepanel1');
+
+  });
+
+$('#click4').on("shown.bs.tab", function(){
   
     $('html, body').animate({
         scrollTop: $('#service-three').offset().top - 100
@@ -98,8 +123,26 @@ $('#click3').on("shown.bs.tab", function(){
             <div class="col-lg-10" id="logo">
                 <hr>
             
-<h3>Systémově zlepšujeme prostředí pro hybatele společenských změn v České republice</h3>
+<h3>Iniciativa ke zlepšení podpůrného prostředí pro hybatele společenských změn v Česku</h3>
+
+<button data-toggle="collapse" data-target="#rozbal" class="btn btn-danger cervena">Více o iniciativě &nbsp;▼</button>
+
+
+
+<div id="rozbal" class="collapse">         
+<p>
+  Africké přísloví říká, že k tomu, aby člověk vychoval dítě, je zapotřebí celé vesnice. 
+
+  A stejně tak platí, že k růstu a rozvoji hybatelů společensky prospěšných změn je třeba celý „ekosystém“ podpory – to znamená fungující prostředí, v němž lidé, kteří chtějí systémově zlepšovat život společnosti, snadno naleznou přístup ke znalostem, know-how, zkušenostem, spolupracovníkům s odpovídajícími dovednostmi a také k finanční a pro bono podpoře. 
+
+  Proto Ashoka oslovila řadu významných organizací i jednotlivců, abychom společně v duchu myšlenky sdíleného či <a href=" http://www.collaborationforimpact.com/collective-impact/">kolektivního dopadu</a> bariéry na jejich cestě odstraňovali a z Česka vytvářeli skutečnou zemi změny. Chcete k tomu přispět i vy? <a href="https://goo.gl/forms/5kvl2EvlusYZ9XQN2">Vyplňte tento formulář a získáte více informací</a>.
+</p>
+</div>
+
             <hr>
+
+
+
             </div>
             <div class="col-lg-1">
                 
@@ -111,41 +154,41 @@ $('#click3').on("shown.bs.tab", function(){
         <div class="row">
             
           <div class="col-md-4">
-                <div class="panel panel-default text-center">
+                <div id="panel1" class="panel panel-default text-center">
                     <div class="panel-heading">
                         <h1 class="rok2015">2015</h1>
                     </div>
                     <div class="panel-body">
-                      <img src="img/2015.png">
-                      <h4>MAPA SOCIÁLNÍCH INOVÁTORŮ</h4>
-                        <p>Známe hybatele sociálních změn v České republice. Na Mapě sociálních inovátorů najdete 1840 lidí,  kterým se daří měnit svět k lepšímu.</p>
+                      <img src="img/2015b.jpg">
+                      <h4>MAPA SOCIÁLNÍCH INOVÁTORŮ<br>V ČESKÉ REPUBLICE</h4>
+                        <p>Zmapovali jsme hybatele společenských změn v ČR. Na Mapě sociálních inovátorů se ocitlo 1840 lidí, kterým se daří měnit svět k lepšímu.</p>
                         <a href="#service-one" data-toggle="tab" class="btn-lg btn-default" id="click1">Více o mapě</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="panel panel-default text-center">
+                <div id="panel2" class="panel panel-default text-center">
                     <div class="panel-heading">
                         <h1 class="rok2016">2016</h1>
                     </div>
                     <div class="panel-body">
                       <img src="img/2016.png">
-                      <h4>ZE:MĚ ZMĚNY I</h4>
-                        <p>Víme, co sociálním inovátorům brání v uskutečnění společenských změn. Společně hledáme řešení pro vzvy, které před nimi v Česku stojí.</p>
+                      <h4>SONDA DO VÝZEV A BARIÉR<br>ZE:MĚ ZMĚNY I</h4>
+                        <p>Zjistili jsme, jaké bariéry stojí v cestě hybatelů společensky prospěšných změn. Desítky jednotlivců i organizací spojilo síly k jejich odstranění.</p>
                         <a href="#service-two" data-toggle="tab" class="btn-lg btn-default" id="click2">Více o bariérách</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="panel panel-default text-center">
+                <div id="panel3" class="panel panel-default text-center activepanel3">
                     <div class="panel-heading">
                         <h1 class="rok2017">2017</h1>
                     </div>
                     <div class="panel-body">
                       <img src="img/2017.png">
-                      <h4>ZE:MĚ ZMĚNY II</h4>
-                        <p>Pracujeme na odstraňování bariér pro sociální inovátory. Na společných setkáních propojujeme aktéry a přinášíme návrhy řešení jejich problémů.</p>
-                        <a href="#service-three" data-toggle="tab" class="btn-lg btn-default" style="margin-bottom:32px;"  id="click3">Aktivity v roce 2017</a>
+                      <h4>MOC SDÍLENÉHO DOPADU<br>ZE:MĚ ZMĚNY II</h4>
+                        <p>Vykrystalizovaly nové iniciativy odpovídající na bariéry a potřeby hybatelů změn. Ze:mě změny se rozvíjí a vybízí, abyste se do spolutvorby podpůrného ekosystému zapojili i vy.</p>
+                        <a href="#service-three" data-toggle="tab" class="btn-lg btn-default" style="margin-bottom:32px;"  id="click3">Více o aktivitách</a>
                     </div>
                 </div>
             </div>
@@ -169,67 +212,46 @@ $('#click3').on("shown.bs.tab", function(){
                       <div class="row">
                           <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 text-obsahu">
 
-                        <h1>KDO JSOU SOCIÁLNÍ INOVÁTOŘI?</h1>
+                        <h1>MAPA SOCIÁLNÍCH INOVÁTORŮ</h1>
 
                         <hr>
 
                         <p class="perex">
-                          V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i jejich podporovatele. Děkujeme, že jste svými zkušenostmi a myšlenkami proměnili toto setkání ve skutečný milník!
+                          Sociální inovátoři jsou lidé, kteří svým podnikavým duchem systémově řeší ty nejpalčivější problémy společnosti. Přicházejí s inovačními řešeními, která od základů mění celé oblasti lidské činnosti. Díky své vytrvalosti, podnikavosti a kreativitě se tak stávají hybateli společenských změn. My jsme se je pokusili zmapovat.
+
                         </p>
 
 
                         <hr>
 
-                        <img src="img/mapa.png">
-
-                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. Děkujeme, že jste svými zkušenostmi a myšlenkami proměnili toto setkání ve skutečný milník! K růstu a rozvoji sociálních inovátorů, tj. hybatelů systémových společenských změn je zapotřebí celý soubor podpůrných opatření – <a href="ascas">rozmanité zdroje financování</a>, mentoring, odborné poradenství, úzká spolupráce mezi světem podnikání, nevládním i veřejným sektorem. Celkově tak tvoří “ekosystém” sociálních inovací.
-                        </p>
-                        
-                        <h2>Kolik sociálních inovátorů je v Česku?</h2>
-
-                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        </p>
+                        <img src="img/mapa.jpg">
 
 
-                        <h3>Mít nápad je jen začátek, změna přichází až později</h3>
+<p>Mapováním hybatelů společenských změn lze lépe pochopit, jak pracují a jak je efektivněji podporovat. Mapa ukazuje nejen jednotlivce, ale dává zprávu o ekosystému včetně jeho silných a slabých míst. 
 
-                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        </p>
+<p>Ashoka proto za pomoci Nadace Karla Janečka a rakouské analytické agentury FAS research uskutečnila na přelomu let 2014 a 2015 mapování také v České republice. Oslovila klíčové aktéry v daných oblastech a metodou sněhové koule od nich získávala doporučení na další významné inovátory, experty a podporovatele společenských změn. 
 
-                        <h4>Sociální podnikání je podnikání jako každé jiné</h4>
-                        
-                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        </p>
+<h3>Kdo je na mapě?</h3>
 
+<p>Vytvořená mapa není úplným výčtem hybatelů společenských změn, ani žebříčkem jejich úspěšnosti. Z počtu nominací však lze usuzovat míru vnímání jejich významu okolím. Proto čím více nominací inovátor získal, tím větší bod mu odpovídá na mapě. Umístění více v centru potom znamená, že osoba nebo instituce funguje více v průřezu tématy. 
 
-                        <h5>Zázraky přes noc se nedějí</h5>
+<p>Ashoka oslovila pět set osob ve čtyřech tematických oblastech: (1) posilování občanské společnosti, transparence a místní rozvoj, (2) vzdělávání, výchova a podpora zájmu o vědu a výzkum , (3) zdravý životní styl, zdravá výživa a přístup ke zdravotní péči a (4) sociálně-ekonomická inkluze.
 
-                        <p>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        </p>
+<p>Odezvu získala od 310 z nich a z následných rozhovorů vzešlo 1840 nominací.  
 
+<h3>K čemu mapa slouží?</h3>
 
+<p>Pro sociální inovátory i jejich podporovatele se mapa stala užitečným vodítkem k tomu, kam strategicky upřít svou pozornost. 
 
-                        <ol>
-                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                      
-</li>
-                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        
-</li>
-                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        
-</li>
-                        </ol>
+<p>Pro Ashoku se toto mapování  stalo prvním krokem na cestě k analýze bariér a potřeb hybatelů společenských změn v České republice. Jejím cílem je zapojit rozmanité aktéry do společného vytváření podpůrného ekosystému, v němž mohou růst a rozvíjet se všichni, kdo mohou přispět ke společensky prospěšným změnám.
+
+<p>Více o pozadí, praktických přínosech a zjištěních z mapování sektoru sociálních inovátorů <a href="http://ashoka-cee.org/czech/2015/05/07/ashoka-zpracovala-mapu-socialnich-inovatoru-v-cr-proc/">naleznete v tomto článku</a>.
+
+<p><a href="http://blog.aktualne.cz/media/222/20150505-mapa.jpg"><img src="http://blog.aktualne.cz/media/222/20150505-mapa.jpg"><a>
+  <a href="http://ashoka-cee.org/czech/wp-content/uploads/sites/5/2015/04/Changemaker-map-Czech-Republic.pdf">Mapa ve větším rozlišení (PDF)</a>
 
 
-                        <ul>
-                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        </li>
-                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        </li>
-                          <li>V Praze proběhlo 14. dubna setkání klíčových aktérů na poli sociálních inovací, kam Ashoka Česká republika spolu s partnery přizvala víc než sto dvacet představitelů soukromého, občanského i veřejného sektoru, sociální inovátory i <b>jejich podporovatele</b>. 
-                        </li>
-                        </ul>
+
 
                         </div>
                       </div>
@@ -238,27 +260,226 @@ $('#click3').on("shown.bs.tab", function(){
                       <div class="row">
                           <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 text-obsahu">
 
-                        <h4>Service Two</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+                        <h1>Sonda do ekosystému sociálních inovací</h1>
+                        
+<hr>
+<p class="perex">Mapování hybatelů změn nám umožnilo v základní míře identifikovat sociální inovátory v České republice. Organizace Ashoka, která se po celém světě zabývá vyhledáváním a podporou hybatelů systémových změn, na mapování navázala v roce 2016 analýzou jejich překážek a potřeb. </p>
+<hr>
+
+     <img src="img/lide.jpg">
+
+<p>Ashoka ve spolupráci s Ministerstvem práce a sociálních věcí (MPSV) zpracovala sondu do výzev a bariér, které před hybateli aktuálně stojí. 
+
+<p>Prostřednictvím strukturovaných rozhovorů s pětadvaceti předními sociálními inovátory i jejich podporovateli se podařilo identifikovat <b>devět zásadních problémů</b> na cestě za společenskými změnami. 
+
+<p>Patří mezi ně (1) nedostatečná orientace na společenský dopad a kapacita ho sledovat nebo dokonce měřit, (2) nezkušenost s advokační činností, (3) slabá schopnost sebeprezentace, (4) nízce rozvinutá spolupráce s veřejnou správou, (5) malá diverzifikace finančních zdrojů, (6)  neuspokojivé příležitosti ke sdílení a síťování, (7) rozdílné či nejasné chápání základních pojmů jako systémová změna či sociální inovace, dále (8) nevyužitý potenciál spolupráce mezi hybateli změn a světem byznysu a (9) chybějící podpora osobního rozvoje.
+
+
+<p>Celé znění sondy <a href="https://ashoka.box.com/v/sonda">naleznete zde</a>.
+
+<h3>Vznik iniciativy</h3>
+
+<p>Logickým krokem bylo nastartovat iniciativu, která propojí hlavní aktéry s cílem tyto bariéry společně odstranit na systémové úrovni. Tedy jak formou <a href="http://www.collaborationforimpact.com/collective-impact/">sdíleného či kolektivního dopadu</a> vytvářet prostředí, v němž se bude dařit růstu a rozvoji společensky prospěšných změn.
+
+<p>Takto vznikla <b>Ze:mě změny</b> – iniciativa desítek organizací i jednotlivců, kteří přijali pozvání systémově zlepšovat prostředí pro sociální inovátory v České republice. 
+
+<p>14. dubna 2016 se sešlo více než 120 klíčových aktérů na poli sociálních inovací. Nad výstupy Sondy (link) se odehrálo sedm workshopů a jejich výsledkem jsou konkrétní iniciativy k odstranění bariér v ekosystému sociálních inovací.
+
+<p>Více o setkání Ze:mě změny 2016 <a href="http://ashoka-cee.org/czech/2016/04/20/novi-ashoka-fellows-popsali-svuj-pribeh-na-setkani-zeme-zmeny/">najdete zde</a>.
+
+<hr>
+
+<p>Účastníci a účastnice „Ze:mě změny“ společně hledali řešení nad těmito tématy:</p>
+
+
+
+<table class="table table-responsive"> 
+  <tbody>
+<tr><td>
+  <h4>SLEDOVÁNÍ A FINANCOVÁNÍ DOPADU: JAKÉ PODPŮRNÉ MECHANISMY POTŘEBUJEME V ČR?</h4></td>
+  <td>
+Debata se věnovala důvodům, proč
+
+sledování dopadu ještě stále není
+
+samozřejmou součástí práce sociálních
+
+inovátorů, jak může sledování dopadu
+
+pomoci při financování inovací, jak
+
+vypadá aktuální situace v ČR a jak
+
+společnými silami zaplnit zmíněné
+
+mezery.
+
+</td></tr>
+<tr><td>
+
+<h4>SPOLUPRÁCE
+
+S VEŘEJNOU SPRÁVOU
+
+A PŘIPRAVENOST
+
+VEŘEJNÉ SPRÁVY NA
+
+ABSORBCI INOVACÍ</h4>
+</td><td>
+
+Účastníci se zaměřili na téma potenciálu
+
+veřejné správy při podpoře sociálních
+
+inovátorů, jak může pomoci škálovat
+
+inovační řešení a jakým způsobem lze
+
+zlepšit propojení představitelů veřejné
+
+správy mezi sebou i směrem
+
+k hybatelům změn.
+</td></tr>
+<tr><td>
+
+<h4>POSÍLENÍ POVĚDOMÍ O
+
+HYBATELÍCH
+
+SPOLEČENSKÝCH
+
+ZMĚN, PR A
+
+SEBEPREZENTACE
+
+INOVÁTORŮ</h4> </td><td>
+
+Diskuse se zaměřila na důvody, proč a
+
+jak je potřeba zvyšovat povědomí o
+
+sociálních inovátorech a jejich činnosti
+
+v ČR, jak mohou napomoci média a
+
+jakou roli přitom může hrát koncept
+
+„Solutions Journalism“.
+
+</td></tr>
+<tr><td>
+
+
+<h4>ADVOKAČNÍ ČINNOST
+
+PRO SYSTÉMOVOU
+
+ZMĚNU</h4> </td><td>
+
+Workshop se věnoval významu
+
+advokační činnosti v souvislosti
+
+s dosahováním systémových změn, zda
+
+mají čeští sociální inovátoři v této oblasti
+
+dostatek podpůrných prostředků a jaká
+
+je role donorů.
+
+</td></tr>
+<tr><td>
+
+
+<h4>VYSOKÉ ŠKOLY A
+
+SOCIÁLNÍ INOVÁTOŘI </h4>
+</td><td>
+Cílem workshopu bylo mimo jiné zjistit,
+
+jaké zkušenosti mají české vzdělávací
+
+instituce s výukou o hybatelích
+
+společenských změn a jejich činnosti a
+
+jak lépe propojit potenciál akademické
+
+sféry s potřebami sociálních inovátorů.
+</td></tr>
+<tr><td>
+
+
+<h4>PÉČE O LÍDRY V ČR:
+
+PROSTŘEDÍ PRO
+
+ROZVOJ, SDÍLENÍ A PODPORU</h4></td><td>
+
+Účastníci workshopu se zabývali
+
+vzdělávacími a seberozvojovými
+
+příležitostmi pro sociální inovátory v ČR
+
+spolu s tím, zda je potřeba více
+
+rozvinout příležitosti k propojení, sdílení
+
+PODPORU zkušeností a společnému řešení výzev
+
+napříč sektory. Došlo také na téma
+
+wellbeingu sociálních inovátorů.
+</td></tr>
+</tbody>
+</table>
+
+<p>O iniciativách, které se zrodily a rozvinuly na platformě „Země změny“ se <a href="#service-three" data-toggle="tab" id="click4">dočtete více zde</a> 
+
+
+
+
+
+
                         </div>
                       </div>
                     </div>
-                    <div class="tab-pane fade" id="service-three">
+                    <div class="tab-pane fade active in" id="service-three">
                       <div class="row">
                           <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 text-obsahu">
 
-                        <h4>Service Three</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
+<h1>Moc sdíleného dopadu</h1>
+
+<hr>               
+<p class="perex">V dubnu 2016 se na setkání „Ze:mě změny“ propojilo více než 120 významných aktérů na poli sociálních inovací a podpory hybatelů společenských změn. Společně hledali řešení, jak odstranit hlavní bariéry na cestě k rozvoji a růstu sociálních inovací v Česku. Myšlenka sdíleného či kolektivního dopadu přinesla své ovoce.
+
+ <hr> 
+
+<img src="img/workshop.jpg">
+
+
+<p>Na setkání se zrodilo a rozvinulo několik konkrétních projektů a aktivit, které usilují o řešení nedostatků či bariér v „Zemi změny“, tedy v českém ekosystému podpory pro hybatele systémových, společensky prospěšných změn.
+
+<h3>JAKÉ VÝSLEDKY ZATÍM PŘINESLA INICIATIVA „ZE:MĚ ZMĚNY“?</h3>
+
+<p>Aktivity zrozené díky Zemi změny nebo na jejím orbitu odpovídají na specifický systémový problém, který hybatelé změn v předcházejícím roce identifikovali prostřednictvím již zmíněné sondy. Nositeli těchto aktivit jsou v některých případech jednotlivé organizace, jindy jejich koalice a samozřejmě jednotlivci. Některé z nich se během jediného roku přerodily do pevně ukotvených projektů, které se již rozběhly, nebo v nejbližší době zahájí svou činnost. Jiné jsou ve stádiu zrodu.
+
+<p>Tyto aktivity se představí na druhém setkání Ze:mě změny 4. května 2017 a bezprostředně po jeho konání i zde na těchto stránkách. 
+
+<p>Pokud vás zaujal kolektivní proces cílený na vytváření prostředí, které přeje hybatelům změn, kontaktujte nás prostřednictvím <a href="https://goo.gl/forms/5kvl2EvlusYZ9XQN2">tohoto formuláře</a>.
+
+
+
+
+
                       </div>
                     </div>
                     </div>
-                    <div class="tab-pane fade" id="service-four">
-                        <h4>Service Four</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae repudiandae fugiat illo cupiditate excepturi esse officiis consectetur, laudantium qui voluptatem. Ad necessitatibus velit, accusantium expedita debitis impedit rerum totam id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus quibusdam recusandae illum, nesciunt, architecto, saepe facere, voluptas eum incidunt dolores magni itaque autem neque velit in. At quia quaerat asperiores.</p>
-                    </div>
+
                 </div>
 
         </div>
@@ -273,43 +494,46 @@ $('#click3').on("shown.bs.tab", function(){
 
             <div class="row" style="width:100%">
               
-                <div class="col-xs-6 text-center col-xs-offset-3">
+              
+                <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 text-center">
                   <h2>NA PROJEKTU ZE:MĚ ZMĚNY SE PODÍLÍ:</h2>
                     <p>
                      <a href="http://www.ashoka.org">Ashoka</a> <span>&#149;</span>
                      <a href="http://nadacekj.cz">Nadace Karla Janečka</a> <span>&#149;</span>
-                     <a href="http://www.ashoka.org">Enros</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">Fórum dárců</a> <span>&#149;</span>
-                     <a href="http://www.ashoka.org">MPSV</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">OSF Praha</a> <span>&#149;</span>
-                     <a href="http://www.ashoka.org">Impact Hub Praha</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">EduIn</a> <span>&#149;</span>
-                     <a href="http://www.ashoka.org">iniciativa Na jedné lodi</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">Neziskovky.cz</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">Asociace společenské zodpovědosti</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">Inovátoři.cz</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">Lídrárna</a> <span>&#149;</span>
-                     <a href="http://nadacekj.cz">ČOISV</a>
+                     <a href="http://www.nros.cz/">NROS</a> <span>&#149;</span>
+                     <a href="http://www.donorsforum.cz/">Fórum dárců</a> <span>&#149;</span>
+                     <a href="http://www.mpsv.cz/cs/">MPSV</a> <span>&#149;</span>
+                     <a href="http://osf.cz/cs/">OSF Praha</a> <span>&#149;</span>
+                     <a href="http://www.hubpraha.cz/">Impact Hub Praha</a> <span>&#149;</span>
+                     <a href="http://www.eduin.cz/">EduIn</a> <span>&#149;</span>
+                     <a href="http://najednelodi.org/">iniciativa Na jedné lodi</a> <span>&#149;</span>
+                     <a href="http://www.neziskovky.cz/">Neziskovky.cz</a> <span>&#149;</span>
+                     <a href="http://www.spolecenskaodpovednostfirem.cz/">Asociace společenské zodpovědosti</a> <span>&#149;</span>
+                     <a href="http://www.inovatori.cz/">Inovátoři.cz</a> <span>&#149;</span>
+                     <a href="http://lidrarna.cz/">Lídrárna</a> <span>&#149;</span>
+                     <a href="https://cosiv.cz/cs/">ČOSIV</a>
                     </p>
 
-<button class="btn btn-lg btn-default" id="pridejte">Zadejte svůj email pro informace</button>
+<button class="btn-lg" id="pridejte"><a href="https://goo.gl/forms/5kvl2EvlusYZ9XQN2">Vyplňte tento formulář pro další informace</a></button>
 
 
 
- <!-- Modal -->
+ <!-- Modal 
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
+      
       <div class="modal-content">
         <div class="modal-header" style="padding:35px 50px;">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+
           <h4><i class="glyphicon glyphicon-envelope"></i> Zanechte nám svůj email</h4>
         </div>
         <div class="modal-body" style="padding:40px 50px;">
           Budeme vás informovat o dalších aktivitách Ashoky v projektu Ze:mě změny.
 
-          <form role="form" action="https://formspree.io/opavak@gmail.com"
+          <form role="form" action="https://formspree.io/xxx"
       method="POST">
             <div class="form-group">
               
@@ -334,6 +558,7 @@ $('#click3').on("shown.bs.tab", function(){
     </div>
   </div>   
 
+-->
 
 <br>
                     <a href="http://ashoka-cee.org/czech/" title="Přejít na web Ashoky"><img src="img/logo-small.png"
